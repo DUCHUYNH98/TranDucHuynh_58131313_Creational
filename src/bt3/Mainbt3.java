@@ -22,6 +22,7 @@ public class Mainbt3 {
         System.out.println(s1.draw());
         Shape s2 = shapeFactory.createShape(ShapeType.tg);
         System.out.println(s2.draw());
+        
     }
     
 }

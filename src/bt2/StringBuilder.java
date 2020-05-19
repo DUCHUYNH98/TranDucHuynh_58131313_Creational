@@ -20,19 +20,19 @@ public class StringBuilder {
         }
         public MyStringBuilder addString (String s)
         {
-            this.str = this.str.concat(s);
+            this.str += " "+s;
             return this;
         }
         public MyStringBuilder addFloat (float f)
         {
             String s = f +"";
-            this.str = this.str.concat(s);
+            this.str += " "+s; 
             return this;
         }
         public MyStringBuilder addBool (boolean b)
         {
             String s = b + "";
-            this.str = this.str.concat(s);
+            this.str += " "+s;
             return this;
         }
         public StringBuilder myStringBuilder()
