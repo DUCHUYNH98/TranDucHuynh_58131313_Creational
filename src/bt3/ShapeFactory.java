@@ -27,17 +27,15 @@ public class ShapeFactory {
         
         switch(shapeType)
         {
-            case vuong: return new Rectangle();
+            case hcn: return new Rectangle();
         
             case tron: return new Circle();
+            
+            case tg: return new Traingle();
                        
         }
         return null;
     }
-    public Shape ve(ShapeType shapeType)
-    {
-        Shape s = createShape(shapeType);
-        s.draw();
-        return s;
-    }
+    
 }
+

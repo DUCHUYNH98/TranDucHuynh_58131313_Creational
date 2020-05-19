@@ -10,26 +10,35 @@ package bt3;
  * @author FPT_2-4
  */
 public abstract class Shape {
-    String brush;
-    String paper;
-    String frame;
+    private String brush;
+    private String paper;
+    private String frame;
 
     public String getBrush() {
         return brush;
+    }
+
+    public void setBrush(String brush) {
+        this.brush = brush;
     }
 
     public String getPaper() {
         return paper;
     }
 
+    public void setPaper(String paper) {
+        this.paper = paper;
+    }
+
     public String getFrame() {
         return frame;
     }
 
-    @Override
-    public String toString() {
-        return "Shape{" + "brush=" + brush + ", paper=" + paper + ", frame=" + frame + '}';
+    public void setFrame(String frame) {
+        this.frame = frame;
     }
+
+   
  
     public abstract String draw();
 }

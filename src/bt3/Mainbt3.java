@@ -15,11 +15,13 @@ public class Mainbt3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        ShapeFactory s1 = ShapeFactory.getInstance(); 
-        Shape s = s1.ve(ShapeType.tron);
-        System.out.println(s.toString());
-        
+        ShapeFactory shapeFactory = ShapeFactory.getInstance();
+        Shape s = shapeFactory.createShape(ShapeType.tron);
+        System.out.println(s.draw());
+        Shape s1 = shapeFactory.createShape(ShapeType.hcn);
+        System.out.println(s1.draw());
+        Shape s2 = shapeFactory.createShape(ShapeType.tg);
+        System.out.println(s2.draw());
     }
     
 }

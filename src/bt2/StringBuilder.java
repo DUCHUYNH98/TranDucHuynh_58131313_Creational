@@ -10,30 +10,29 @@ package bt2;
  * @author FPT_2-4
  */
 public class StringBuilder {
-    String str;
+    String str = "";
     public static class MyStringBuilder
     {
-        String str;
-        String s;
-        float f;
-        boolean b;
+        String str = "bai2";
         public MyStringBuilder()
         {
             
         }
         public MyStringBuilder addString (String s)
         {
-            this.s = s;
+            this.str = this.str.concat(s);
             return this;
         }
         public MyStringBuilder addFloat (float f)
         {
-            this.f = f;
+            String s = f +"";
+            this.str = this.str.concat(s);
             return this;
         }
         public MyStringBuilder addBool (boolean b)
         {
-            this.b = b;
+            String s = b + "";
+            this.str = this.str.concat(s);
             return this;
         }
         public StringBuilder myStringBuilder()
@@ -45,5 +44,11 @@ public class StringBuilder {
     public StringBuilder(MyStringBuilder myStringBuilder) {
         this.str = myStringBuilder.str;
     }
+
+    @Override
+    public String toString() {
+        return "StringBuilder{" + "str=" + str + '}';
+    }
+    
     
 }

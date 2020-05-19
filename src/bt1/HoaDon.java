@@ -48,7 +48,7 @@ public class HoaDon {
         this.NgayBan = hoaDonHeader.NgayBan;
         this.TenKH = hoaDonHeader.TenKH;
     }
-
+ 
     public void xuatHD (ArrayList<CTHD> cthd)
     {
         System.out.println("Thong tin Hoa don:'{'\n"

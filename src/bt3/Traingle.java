@@ -9,18 +9,14 @@ package bt3;
  *
  * @author FPT_2-4
  */
-public class Circle extends Shape{
-  
+public class Traingle extends Shape{
+
     @Override
     public String draw() {
-        setBrush("But chi");
-        setFrame("Hinh Tron");
-        setPaper("Giay vo");
-       return getBrush()+"-" + getPaper()+"-" + getFrame();
+        setBrush("but chi");
+        setPaper("Giay a4");
+        setFrame("Hinh tam giac");
+        return getBrush()+"-" + getPaper()+"-" + getFrame();
     }
-    
-
-
-    
     
 }

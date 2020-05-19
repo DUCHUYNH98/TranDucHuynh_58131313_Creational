@@ -10,14 +10,16 @@ package bt3;
  * @author FPT_2-4
  */
 public class Rectangle extends Shape{
-    Shape shape;
+    //Shape shape;
+    
+
     
     @Override
     public String draw() {
-        shape.setBrush("But long");
-        shape.setPaper("Giay A4");
-        shape.setFrame("Hinh Vuong");
-        return shape.getBrush() + "\n" + shape.getPaper()+"\n" + shape.getFrame();
+        setBrush("But long");
+        setPaper("giay a1");
+        setFrame("Hinh chu nhat");
+        return getBrush()+"-" + getPaper()+"-" + getFrame();
     }
     
 }

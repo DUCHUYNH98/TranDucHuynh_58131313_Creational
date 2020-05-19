@@ -10,5 +10,5 @@ package bt3;
  * @author FPT_2-4
  */
 public enum ShapeType {
-    vuong, tron
+    hcn, tron,tg
 }
